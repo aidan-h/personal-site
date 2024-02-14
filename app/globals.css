@@ -19,7 +19,7 @@
 :root {
 	--light-color: #fcf9f7;
 	--dark-color: #181d2d;
-	--dark-secondary-color: #2a3c4f;
+	--dark-secondary-color: #1f3144;
 }
 
 * {
@@ -30,6 +30,47 @@
 	font-family: "Inter-Regular";
 }
 
+.taskkite hgroup * {
+	margin-bottom: 0px;
+	padding-bottom: 8px;
+}
+
+.taskkite hgroup {
+	padding-bottom: 20px;
+
+}
+
+#projects ul {
+	margin-right: 20px;	
+	margin-left: 20px;	
+	margin-bottom: 20px;
+}
+
+#projects ul * {
+	text-align: center;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+	font-family: "Montserrat-Regular";
+	text-decoration: none;
+}
+#projects hgroup h1 {
+	margin-bottom: 5px;
+}
+
+#projects hgroup p {
+	text-align: center;
+	margin-bottom: 20px;
+}
+#projects hgroup p a {
+	letter-spacing: 2px;
+	font-family: "Montserrat-Regular";
+}
+
+.taskkite {
+	text-align:center;
+
+	margin-bottom: 20px;
+}
 img {
 	object-fit: contain;
 }
@@ -44,6 +85,8 @@ header, header * {
 }
 
 header {
+	position: sticky;
+	top: 0px;
 	display: grid;
 	grid-template-columns: 200px auto 200px;
 	padding-bottom: 15px;
@@ -73,7 +116,7 @@ h1 {
 	margin-bottom: 20px;
 	text-align: center;
 }
-.technologies ul {
+#technologies ul {
 	width: 100%;
 	display: grid;
 	justify-content: center;
@@ -81,28 +124,64 @@ h1 {
 	margin-bottom: 40px;
 }
 
-.technologies ul li img {
+#technologies ul li img {
 	width: 50px;
 	height: 50px;
 }
 
-.technologies ul li {
+#technologies ul li {
 	padding: 10px;
 }
 
+#technologies ul, #technologies ul * {
+	background-color: var(--light-color);
+	color: var(--dark-color);
+}
+
+footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+}
+
+.email {
+	padding: 4px;
+	border: none;
+	border-radius: 10px;
+	background-color: var(--light-color);
+	color: var(--dark-color);
+}
+
+footer div p {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+footer, footer * {
+	background-color: var(--dark-secondary-color);
+}
 
 @media (min-width: 50rem) {
-	.technologies ul li img {
+	#technologies ul li img {
 		width: 100px;
 		height: 100px;
 	}
 
-	.technologies ul li {
+	#technologies ul li {
 		padding: 20px;
+	}
+
+	#projects ul {
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+
 	}
 }
 
-.technologies ul, .technologies ul * {
-	background-color: var(--light-color);
-	color: var(--dark-color);
-}
