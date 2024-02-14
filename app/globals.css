@@ -1,0 +1,108 @@
+@font-face {
+	font-family: "Inter-Regular";
+	src:
+		url("/fonts/Inter-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat-Bold";
+	src:
+		url("/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat-Regular";
+	src:
+		url("/fonts/Montserrat-Regular.ttf");
+}
+
+:root {
+	--light-color: #fcf9f7;
+	--dark-color: #181d2d;
+	--dark-secondary-color: #2a3c4f;
+}
+
+* {
+	background-color: var(--dark-color);
+	color: var(--light-color);
+	margin: 0px;
+	list-style: none;
+	font-family: "Inter-Regular";
+}
+
+img {
+	object-fit: contain;
+}
+
+ul {
+	padding: 0px;
+}
+
+header, header * {
+	font-family: "Montserrat-Regular";
+	background-color: var(--dark-secondary-color);
+}
+
+header {
+	display: grid;
+	grid-template-columns: 200px auto 200px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 20px;
+	padding-top: 15px;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+}
+
+nav * {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+h1 b, h1 a {
+	font-family: "Montserrat-Bold";
+}
+
+h1 {
+	letter-spacing: 2px;
+	font-family: "Montserrat-Regular";
+	margin-bottom: 20px;
+	text-align: center;
+}
+.technologies ul {
+	width: 100%;
+	display: grid;
+	justify-content: center;
+	grid-template-columns:auto auto auto auto auto; 
+	margin-bottom: 40px;
+}
+
+.technologies ul li img {
+	width: 50px;
+	height: 50px;
+}
+
+.technologies ul li {
+	padding: 10px;
+}
+
+
+@media (min-width: 50rem) {
+	.technologies ul li img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.technologies ul li {
+		padding: 20px;
+	}
+}
+
+.technologies ul, .technologies ul * {
+	background-color: var(--light-color);
+	color: var(--dark-color);
+}
